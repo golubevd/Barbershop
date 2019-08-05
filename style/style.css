@@ -1,3 +1,111 @@
 body{
-    
+    margin: 0;
+    padding: 0;
+    font-family: "Ptsans Narrow","Arial",sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background:#000 url("../img/index-bg.jpg") no-repeat center top;
+}
+
+.wrapper{
+    box-sizing: border-box;
+    width: 960px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+header{   
+    background: #000;
+}
+
+.header-inner{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-nav{
+    display: flex; 
+    flex-grow: 1;
+    text-align: left;
+    min-height: 70px;
+}
+
+.main-nav a{
+    position: relative;
+    display: block;
+    font-family: "Ptsans Narrowbold","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 25px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+  background: #242424;
+}
+
+.nav-link-active::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 4px;
+     background: #fff;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+}
+
+.login-block{
+    position: relative;
+    max-width: 140px;       
+    text-align: right;
+}
+
+.user-login{
+    position: relative;
+    display: inline-block;  
+    display: block;
+    font-family: "Ptsans Narrowbold","Arial",sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 25px 20px;
+    padding-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.user-login::before{
+   position: absolute;
+    display: block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 28px;
+    left: 20px;
+    background: url("../img/login-icon.svg") no-repeat;
+    opacity: .3;    
+}
+
+.user-login:hover {
+  background: #242424;
+}
+
+.user-login:hover::before{
+    opacity: 1;
+}
+
+.logo{
+    display: block;
+    margin:0 20px;
 }
