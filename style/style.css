@@ -9,7 +9,8 @@ body{
     background:#000 url("../img/index-bg.jpg") no-repeat center top;
 }
 
-body.inner-pages{
+.inner-pages{
+     font-family: "Ptsans Narrowbold","Arial",sans-serif;  
     color: #000;
   background:#fff url("../img/pages-bg.jpg") center top;   
 }
@@ -23,7 +24,7 @@ body.inner-pages{
 
 header{   
     background: #000;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .header-inner{
@@ -332,6 +333,7 @@ footer{
   padding-bottom: 40px;
   color: #ffffff; /* лучше явно прописать везде для футера */
     background: #252525  url("../img/footer-bg.JPG");
+    box-shadow: inset 0px 30px 40px -15px #000;
 }
 
 .footer-inner {
@@ -417,3 +419,171 @@ footer{
     background:#fff url("../img/instagram-icon-black.svg") no-repeat center;
 }
 
+/*Разметка страницы прайс*/
+
+.inner-pages header{
+    margin-bottom: 55px;    
+}
+
+
+.section-title{ 
+    font-size: 30px;
+    line-height: 42px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.breadcrumbs-list{
+    display: flex;
+    padding: 0;
+     margin-bottom: 55px;
+    font-size: 14px;
+    line-height: 24px;   
+}
+
+.breadcrumbs-list li{
+    position: relative;
+    display: inline; 
+    padding-right: 40px;   
+}
+
+.breadcrumbs-list li::after{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    top: 8px;
+    right: 15px;
+    transform: rotate(45deg);
+}
+
+.breadcrumbs-list a{
+   color: #000; 
+    text-decoration: none;
+}
+
+.breadcrumbs-list a:hover{
+    text-decoration: underline;
+}
+
+.breadcrumbs-list .w-current{
+  color: #aba9a7;
+}
+
+.w-current::after{
+    display: none;
+}
+
+.block-title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+}
+
+
+.price-content-block .big-heading-flex{
+  display: flex;
+  align-items: center;  
+  margin-top: 55px;
+  margin-bottom: 65px;
+  font-size: 48px;  
+  text-align: center;
+}
+  
+
+.price-content-block .big-heading-flex::before,
+.price-content-block .big-heading-flex::after {
+  content: "";
+  flex-grow: 1;
+  width: 50px;
+  height: 2px;
+  background: black;
+}
+
+.price-content-block .big-heading-flex::before {
+  margin-right: 25px;
+}
+
+.price-content-block .big-heading-flex::after {
+  margin-left: 25px;
+}
+
+.trademarks-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.trademarks-item{
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.trademarks-item::before{
+   position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    top: 8px;
+    left: 0;
+    transform: rotate(45deg);  
+}
+
+.price-content-block table{
+    border-collapse: collapse;
+}
+
+.price-content-block td{
+    padding:10px 15px;
+    border: 2px solid #000;
+}
+
+.price-table{
+    width: 100%;
+}
+
+.price-table td{
+    width: 50%;
+}
+
+.price-table td:last-child{
+  text-align: center;
+}
+
+.price-inner-block{
+    display: flex;
+    justify-content: space-between;
+    margin:35px 0;
+}
+
+.price-content-left,
+.price-content-right{
+  width: 460px;  
+}
+
+
+.additional-inner-block{
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 30px;
+}
+
+.additional-description-block,
+.additional-about-us{
+    width: 460px;
+}
+
+.additional-description-title{   
+    margin-top: 0;
+    margin-bottom: 10px;    
+}
+
+.additional-description{
+    padding-right: 80px;
+}
