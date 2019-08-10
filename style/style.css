@@ -806,7 +806,8 @@ input[type="checkbox"].visual-hidden {
 .check-form-input + label:hover,
 .radio-form-input + label:hover,
 .check-form-input:checked + label:hover,
-.radio-form-input:checked + label:hover{
+.radio-form-input:checked + label:hover,
+.product-link:hover{
     color: #663d15;
 }
 
@@ -848,6 +849,7 @@ input[type="checkbox"].visual-hidden {
 .form-search-btn{ 
   width: 112px;
   border: none;
+padding: 10px 0;
   text-transform: uppercase;
   color: #fff'';
   background-color: #000;
@@ -878,6 +880,10 @@ input[type="checkbox"].visual-hidden {
 
 .filtered-product-item:not(:nth-child(3n)){
     margin-right: 20px;
+}
+
+.filtered-product-item:hover{
+   box-shadow: 0 0 15px 0 rgba(0,1,1,.5);  
 }
 
 .filtered-product-item img{
