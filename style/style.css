@@ -896,6 +896,7 @@ padding: 10px 0;
 .product-title{
     font-size: 14px;
     line-height: 18px;
+    font-weight: 500;
     padding: 0 16px;
     margin: 0 0 15px;
     text-align: left;
