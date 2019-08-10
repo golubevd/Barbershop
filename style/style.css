@@ -236,7 +236,8 @@ header{
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+.page-link:hover{
   background-color: #663d15;
 }
 
@@ -357,7 +358,7 @@ footer{
 .footer-social{
    flex-basis: 180px;
      text-align: center;
-    margin-right: 180px;;
+    margin-right: 170px;;
 }
 
 .footer-social p{
@@ -367,7 +368,7 @@ footer{
 
 .footer-rights{
   max-width: 180px;
-    text-align: center;   
+  text-align: center;   
 }
 
 .footer-rights p{
@@ -567,6 +568,9 @@ footer{
   width: 460px;  
 }
 
+.additional-block{
+    margin-bottom:80px;
+}
 
 .additional-inner-block{
     display: flex;
@@ -586,4 +590,350 @@ footer{
 
 .additional-description{
     padding-right: 80px;
+}
+
+
+/*Разметка страницы товара*/
+
+
+.product-block{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.product-block-left{
+    flex-basis: 460px;
+}
+
+.main-img{
+    margin-bottom: 10px;    
+}
+
+.main-img img{
+    width: 460px;
+    height: 498px;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+
+.more-img-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.more-img-item img{
+    width: 140px;
+    height: 149px;
+     box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+
+.product-block-right{
+    flex-basis: 390px;
+    padding-left: 10px; 
+    
+}
+
+.article-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.article{
+    color: #aeaeae;
+}
+
+.product-description p{
+    margin-top: 30px;
+    margin-bottom: 35px;
+}
+
+.price-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 188px;   
+    background-color: rgba(0,0,0,.1);
+}
+
+.product-price-box{
+   margin: 0 17px 16px;  
+}
+
+.price-box span{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.buy-btn{
+    width: 78px;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background: #000;
+    text-decoration: none;
+}
+
+.product-complect{
+    margin-top: 60px;
+}
+
+.product-complect-title{
+    font-size: 24px;
+    line-height: 30px;    
+}
+
+.product-complect-list{
+    list-style: none;
+    padding: 0;
+    margin-top:30px;
+}
+
+.product-complect-item{
+    position: relative;
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 20px;
+}
+
+.product-complect-item::before{
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    top:6px;
+    left: 0;
+    transform: rotate(45deg);     
+}
+
+.inner-pages footer{
+    margin-top: 40px;
+}
+
+/*Размеька страниц магазина*/
+
+.shop-content-block{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.shop-section .breadcrumbs-list{
+    margin-bottom: 45px;
+}
+
+.shop-content-left{
+    flex-basis: 200px;
+    line-height: 18px;
+}
+
+.check-form  {
+    display: flex;
+    flex-direction: column;
+}
+
+.check-form fieldset{
+    margin: 0;
+    margin-bottom: 35px;
+    padding: 0;
+    border: none;
+}
+
+.visual-hidden:not(:focus):not(:active),
+input[type="radio"].visual-hidden,
+input[type="checkbox"].visual-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+}
+
+.block-title{
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.check-list,
+.radio-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+.check-list-item label,
+.radio-list-item label{    
+    position: relative;
+    display: block;
+    margin-bottom: 19px;
+    padding-left: 42px;
+    color: #000;
+    cursor: pointer;
+}
+
+.check-form-input + label::before{
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: 0px;    
+    left: 0;
+    border: 2px solid #000;
+}
+
+.check-form-input:checked + label::after{
+  position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    top:0px;
+    height: 20px;
+    left: 0;   
+    background: url("../img/checkbox-active.png")no-repeat center;
+}
+
+.check-form-input + label:hover,
+.radio-form-input + label:hover,
+.check-form-input:checked + label:hover,
+.radio-form-input:checked + label:hover{
+    color: #663d15;
+}
+
+.radio-form-input + label::before{
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000;
+    border-radius: 50%;   
+}
+
+.radio-form-input:checked + label::after{
+     position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    top: 6px;
+    left:6px;
+    width: 8px;
+    height: 8px;   
+    border-radius: 50%;
+    background: #000;
+}
+
+.check-form-input:disabled+label,
+.radio-form-input:disabled+label,
+.check-form-input:disabled+label::before,
+.radio-form-input:disabled+label::after{
+  color: #000;
+  cursor: default;
+  opacity: 0.5;
+}
+
+.form-search-btn{ 
+  width: 112px;
+  border: none;
+  text-transform: uppercase;
+  color: #fff'';
+  background-color: #000;
+}
+
+.shop-content-right{
+    flex-basis: 700px;
+}
+
+.filtered-product-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.filtered-product-item {
+    flex-direction: column;
+    width: 220px;
+    min-height: 288px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0,1,1,.2);
+}
+
+.filtered-product-item:not(:nth-child(3n)){
+    margin-right: 20px;
+}
+
+.filtered-product-item img{
+    display: block;
+    width: 220px;
+    height: 165px;
+    margin-bottom: 18px;
+}
+
+.product-title{
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0 16px;
+    margin: 0 0 15px;
+    text-align: left;
+}
+
+.product-link{   
+    text-transform: none;
+    color: #000;
+    text-decoration: none;
+}
+
+.product-card-name{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.pagination-block{
+    margin-top: 10px;
+}
+
+.pages-list{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page-link{  
+     display: inline-block;
+    box-sizing: border-box;
+    width: 42px;
+    height: 42px;
+    margin-right: 8px;
+      padding: 10px 0;
+    background: #000;
+    text-align: center;
+    color: #fff;   
+    text-decoration: none;
+    vertical-align: text-top;
+}
+
+
+.page-link-active{
+    color: #000;
+    background: #fff;
 }
