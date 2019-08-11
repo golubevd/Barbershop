@@ -11,8 +11,7 @@ body {
 
 .inner-pages {
     font-family: "Ptsans Narrowbold", "Arial", sans-serif;
-    color: #000;
-    font-weight: 500;
+    color: #000;    
     background: #fff url("../img/pages-bg.JPG") center top;
 }
 
@@ -484,6 +483,7 @@ footer {
 .section-title {
     font-size: 30px;
     line-height: 42px;
+    font-weight: 500;
     padding: 0;
     margin: 0;
     margin-bottom: 10px;
@@ -534,10 +534,10 @@ footer {
     display: none;
 }
 
-.block-title {
+.price-block-title {
     margin-top: 10px;
     margin-bottom: 30px;
-
+    font-weight: 500;
     font-size: 24px;
     line-height: 30px;
 }
@@ -554,6 +554,7 @@ footer {
     margin-top: 55px;
     margin-bottom: 65px;
     font-size: 48px;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -784,6 +785,7 @@ footer {
 .product-complect-title {
     font-size: 24px;
     line-height: 30px;
+    font-weight: 500;
 }
 
 .product-complect-list {
@@ -872,7 +874,10 @@ input[type="checkbox"].visual-hidden {
 .block-title {
     margin: 0;
     margin-bottom: 25px;
-    padding: 0;
+    padding: 0;    
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
 }
 
 .check-list,
