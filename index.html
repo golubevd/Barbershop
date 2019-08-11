@@ -44,6 +44,7 @@
                 <img src="./img/index-logo.svg" width="386" height="204" alt="Барбершоп «Бородинский»">
             </div>
             <section class="features">
+                <h2 class="visual-hidden">Наши приемущеста</h2>
                 <div class="features-item">
                     <b>Быстро</b>
                     <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
@@ -107,16 +108,16 @@
                     <form action="https://echo.htmlacademy.ru" class="appointment-form" method="post">
                         <label for="date">
                             <span>Дата</span>
-                            <input type="text" name="date" placeholder="08.10.2019" value=""></label>
+                            <input type="text" id="date" name="date" placeholder="08.10.2019" value=""></label>
                         <label for="time">
                             <span>Время</span>
-                            <input type="text" name="time" placeholder="10:00" value=""></label>
+                            <input type="text" id="time" name="time" placeholder="10:00" value=""></label>
                         <label for="name">
                             <span>Ваше имя</span>
-                            <input type="text" name="name" placeholder="Борода" value=""></label>
+                            <input type="text" id="name" name="name" placeholder="Борода" value=""></label>
                         <label for="phone">
                             <span>Телефон</span>
-                            <input type="tel" name="phone" placeholder="+7 123 456-78-90" value=""></label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 123 456-78-90" value=""></label>
                         <button type="submit" class="btn btn-form-submit">Отправить</button>
                     </form>
                 </div>
@@ -127,24 +128,58 @@
         <div class="wrapper">
             <div class="footer-inner">
                 <section class="footer-contatcs">
+                    <h2 class="visual-hidden">Наш адрес</h2>
                     Барбершоп «Бородинский»<br>
                     Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-                    <a href="#">Как нас найти?</a><br>
+                    <a href="#" class="find-us">Как нас найти?</a><br>
                     Телефон: +7 (495) 666-02-66
                 </section>
                 <section class="footer-social">
+                    <h2 class="visual-hidden">Мы в социальных сетях</h2>
                     <p>Давайте дружить</p>
                     <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
                     <a href="#" class="social-btn social-fb">Фейсбук</a>
                     <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
                 </section>
                 <section class="footer-rights">
+                    <h2 class="visual-hidden">Сделано для</h2>
                     <p>Разработано:</p>
                     <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
                 </section>
             </div>
         </div>
     </footer>
+    <article class="modal-login">
+        <h2 class="modal-login-title">Личный кабинет</h2>
+        <p class="modal-login-description">Введите пожалуйста свой логин и пароль</p>
+        <form action="#" class="modal-login-form" method="get">
+            <label for="login-name" class="modal-login-label modal-login-label__name">
+                <input type="text" class="modal-login-input" name="login-name" id="login-name" placeholder="Логин">
+            </label>
+            <label for="login-password" class="modal-login-label modal-login-label__pass">
+                <input type="password" class="modal-login-input" name="login-password" id="login-password" placeholder="Пароль">
+            </label>
+            <input type="checkbox" id="remember-check" class="visual-hidden" name="remember" value="remember">
+            <label for="remember-check" class="modal-login-label modal-login-label__check">
+                Запомните меня
+            </label>
+            <a href="#" class="modal-login-link">Я забыл пароль!</a>
+            <button type="submit" class="btn">Войти</button>
+        </form>
+        <button class="modal-close">
+            <span class="visual-hidden">Закрыть</span>
+        </button>
+    </article>
+    <article class="modal-map">
+        <h2 class="visual-hidden">Как нас найти</h2>
+        <div class="modal-map-wrapper">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716359368!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1565523365267!5m2!1sru!2sru" width="765" height="560" style="border:0" allowfullscreen></iframe>
+        </div>
+        <button class="modal-close modal-close-map">
+            <span class="visual-hidden">Закрыть</span>
+        </button>
+    </article>
+    <script src="js/modals.js"></script>
 </body>
 
 </html>
